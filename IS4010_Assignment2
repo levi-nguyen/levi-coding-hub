@@ -19,16 +19,13 @@ public class SimpleInterest {
   
   //Allow user to type in desired values
   System.out.println("Enter principal:");
-  principal= input.nextint();
+  principal= input.nextInt();
   System.out.println("Enter interest rate:");
-  rate= input.nextint();
+  rate= input.nextInt();
   System.out.println("Enter number of periods:");
-  time= input.nextint();
+  time= input.nextInt();
   
-  
-  //Calculate the simple interest
-  interest = principal*rate*time;
-  System.out.println("The amount of interest is"+"$"+ interest);
+    //Calculate the simple interest
+ System.out.println("The amount of interest is"+"$"+ ((principal*rate)*time));
   }
 }
-  
