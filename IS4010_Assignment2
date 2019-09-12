@@ -1,0 +1,34 @@
+/*********
+*Assignment 02
+*Duy Nguyen
+*Description: Simple Interest Calculation
+*Due Date: 9.12.2019 @8AM
+*Course: IS4010
+*email: nguyed4@mail.uc.edu
+*/
+
+import java.util.Scanner;
+public class SimpleInterest {
+  public static void main (String[] args)
+  {
+  Scanner input = new Scanner(System.in);
+  //Simple interest = P*r*t
+  
+  int time=0; //this is t
+  double rate= 0.0, principal= 0.0; //this is interest rate and principal
+  
+  //Allow user to type in desired values
+  System.out.println("Enter principal:");
+  principal= input.nextint();
+  System.out.println("Enter interest rate:");
+  rate= input.nextint();
+  System.out.println("Enter number of periods:");
+  time= input.nextint();
+  
+  
+  //Calculate the simple interest
+  interest = principal*rate*time;
+  System.out.println("The amount of interest is"+"$"+ interest);
+  }
+}
+  
