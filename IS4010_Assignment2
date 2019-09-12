@@ -27,6 +27,6 @@ public class Assignment2
         
         //Compute interest 
         double Interest = Principal * Rate * Period;
-        System.out.println("The amount of interest is"+""+"$"+ Interest);
+        System.out.println("The amount of interest is"+" "+"$"+ Interest);
     }
 }
