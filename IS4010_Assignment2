@@ -8,24 +8,25 @@
 */
 
 import java.util.Scanner;
-public class SimpleInterest {
-  public static void main (String[] args)
-  {
-  Scanner input = new Scanner(System.in);
-  //Simple interest = P*r*t
-  
-  int time=0; //this is t
-  double rate= 0.0, principal= 0.0; //this is interest rate and principal
-  
-  //Allow user to type in desired values
-  System.out.println("Enter principal:");
-  principal= input.nextInt();
-  System.out.println("Enter interest rate:");
-  rate= input.nextInt();
-  System.out.println("Enter number of periods:");
-  time= input.nextInt();
-  
-    //Calculate the simple interest
- System.out.println("The amount of interest is"+"$"+ ((principal*rate)*time));
-  }
+public class Assignment2
+{
+    public static void main(String[] args)
+    {
+        //Read principal
+         Scanner input = new Scanner(System.in);
+         System.out.println("Enter principal:");
+         double Principal = input.nextDouble();
+         
+        //Read interest Rate
+        System.out.println("Enter interest rate:");
+        double Rate = input.nextDouble();
+        
+        //Read number of periods
+        System.out.println("Enter number of periods:");
+        int Period = input.nextInt();
+        
+        //Compute interest 
+        double Interest = Principal * Rate * Period;
+        System.out.println("The amount of interest is"+""+"$"+ Interest);
+    }
 }
