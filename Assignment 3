@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Discount {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please enter groceries price: ");
+        double groceries = input.nextDouble();
+
+        //input.close();
+        if (groceries < 0) {
+            System.out.printf("Amount spent cannot be negative.");
+            System.exit(0);
+        } 
+        if (groceries > 1000) {
+            System.out.printf("Amount spent cannot be greater than $1000");
+            System.exit(0);
+        }
+        double couponPrice = 0;
+        double percentage = 0;
+        if (groceries < 10) {
+            percentage = 0.0;
+            couponPrice = groceries * percentage;
+        }
+        else if (groceries >= 10 && groceries <= 15) {
+            percentage = 0.08;
+            couponPrice = groceries * percentage;
+        }
+        else if (groceries >= 15 && groceries <= 1000) {
+            percentage = 0.14;
+            couponPrice = groceries * percentage;
+        }
+        
+        if (couponPrice > 0) {
+            System.out.printf("You win a coupon with price of $ %.2f. (%.2f%% of your purchase)", couponPrice, percentage*100);
+        }
+        else{ 
+            System.out.printf("You don't win a coupon!");
+        }
+        input.close();
+    }
+}
