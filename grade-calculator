@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class calculator {
+    public static void main(String[] args){
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter your grade:");
+        double gpa = input.nextDouble();
+
+        if (gpa >= 90) {
+            System.out.println("Your letter grade is A");
+        }
+
+        else if (gpa < 90 && gpa >= 87) {
+            System.out.println("Your letter grade is B+");
+        }
+
+        else if (gpa < 87 && gpa >= 80) {
+            System.out.println("Your letter grade is B");
+        }
+
+        else if (gpa < 80 && gpa >= 77) {
+            System.out.println("Your letter grade is C+");
+        }
+        else if (gpa < 77 && gpa >= 70) {
+            System.out.println("Your letter grade is C");
+        }
+
+        else if (gpa < 70 && gpa >= 67) {
+            System.out.println("Your letter grade is D+");
+        }
+
+        else if (gpa < 67 && gpa >= 60) {
+            System.out.println("Your letter grade is D");
+        }
+
+        else if (gpa < 60) {
+            System.out.println("Your letter grade is F");
+        }   
+       input.close(); 
+    }
+}
